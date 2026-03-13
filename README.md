@@ -1,59 +1,161 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📚 Library Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
-## About Laravel
+Hệ thống quản lý thư viện được xây dựng bằng **Laravel** (PHP) + **MySQL**, hỗ trợ quản lý sách, tác giả, nhà xuất bản, người dùng và mượn/trả sách.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Tính năng
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🔐 Admin
+- 📊 Dashboard thống kê tổng quan
+- 📖 Quản lý sách (thêm, sửa, xóa, xem chi tiết)
+- 🗂️ Quản lý danh mục sách
+- 🏢 Quản lý nhà xuất bản
+- ✍️ Quản lý tác giả
+- 👤 Quản lý người dùng
+- 🔄 Quản lý mượn/trả sách
 
-## Learning Laravel
+### 👤 Reader (Độc giả)
+- 📋 Xem danh sách sách đã mượn
+- 🔍 Lọc sách theo trạng thái: Tất cả / Chờ đến lấy / Đang mượn / Đã trả / Quá hạn
+- ⏰ Xem hạn trả sách (cảnh báo đỏ khi quá hạn)
+- 📅 Xem ngày mượn và thời gian yêu cầu
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Công nghệ sử dụng
 
-## Laravel Sponsors
+| Thành phần | Công nghệ |
+|------------|-----------|
+| Backend | Laravel (PHP) |
+| Frontend | Blade Template, CSS, JavaScript |
+| Database | MySQL |
+| Build Tool | Vite / Node.js |
+| Version Control | Git |
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## ⚙️ Yêu cầu hệ thống
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- PHP >= 8.0
+- Composer
+- Node.js >= 16 & npm
+- MySQL >= 5.7
+- Git
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📦 Cài đặt
 
-## Code of Conduct
+### 1. Clone repository
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+git clone https://github.com/leduc-vn/Library-management-system-le-manh-duc.git
+cd Library-management-system-le-manh-duc
+```
 
-## Security Vulnerabilities
+### 2. Cài đặt dependencies PHP
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+composer install
+```
 
-## License
+### 3. Cài đặt dependencies Node.js
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+npm install
+```
+
+### 4. Cấu hình môi trường
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Mở file `.env` và chỉnh sửa thông tin database:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=qltv
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 5. Tạo database & migrate
+
+```bash
+php artisan migrate
+php artisan db:seed
+```
+
+### 6. Chạy ứng dụng
+
+Mở **2 terminal** và chạy:
+
+**Terminal 1:**
+```bash
+php artisan serve
+```
+
+**Terminal 2:**
+```bash
+npm run dev
+```
+
+Truy cập: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+## 📁 Cấu trúc thư mục
+
+```
+qltv/
+├── app/
+│   ├── Http/Controllers/   # Xử lý logic
+│   └── Models/             # Model database
+├── database/
+│   ├── migrations/         # Cấu trúc bảng
+│   └── seeders/            # Dữ liệu mẫu
+├── resources/
+│   └── views/              # Giao diện Blade
+├── routes/
+│   └── web.php             # Định nghĩa routes
+├── public/                 # Assets public
+└── .env                    # Cấu hình môi trường
+```
+
+---
+
+## 📸 Giao diện Demo
+
+### 🔐 Admin — Quản lý sách
+> Hiển thị danh sách sách kèm thông tin tổng số, số lượng còn lại và trạng thái mượn.
+
+![Admin - Manage Books](https://github.com/user-attachments/assets/0d06d197-16b9-420c-b82c-ccfe3ad472c8)
+
+### 👤 Reader — Sách đã mượn
+> Độc giả xem danh sách sách đã mượn, lọc theo trạng thái (Chờ đến lấy / Đang mượn / Đã trả / Quá hạn) và theo dõi hạn trả.
+
+![Reader - Borrowed Books](https://github.com/user-attachments/assets/5577db06-2e19-4420-9d16-9c1f794409f7)
+
+---
+
+## 👨‍💻 Tác giả
+
+**Lê Mạnh Đức**  
+GitHub: [@leduc-vn](https://github.com/leduc-vn)
+
+---
+
+## 📄 License
+
+Dự án này được phát triển cho mục đích học tập.
